@@ -1,27 +1,31 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { Navbar } from '../components/Navbar';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          {/* Welcome to <a href="https://nextjs.org">Next.js!</a> */}
+
+
+      <main >
+        <h1 >
 
           Kevins Next Js website
         </h1>
 
-        <p className={styles.description}>
+
+        {/* <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
-        </p>
+        </p> */}
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -49,7 +53,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
