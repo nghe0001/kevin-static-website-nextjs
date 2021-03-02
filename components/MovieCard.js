@@ -9,7 +9,7 @@ export function MovieCard({ movie }) {
         <a className='flex flex-col overflow-hidden mt-6'>
           <img
             className='block w-full flex-1 rounded-lg'
-            src={`${baseUrl}${movie.cover.url}`}
+            src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
             alt={movie.title}
           />
           <h2 className='text-red-500 mt-3 text-center justify-end text-lg'>
@@ -19,3 +19,5 @@ export function MovieCard({ movie }) {
       </Link>
     )
   }
+
+  
