@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:1337/"
+const baseUrl = "http://localhost:1337"
 async function fetchQuery(path, params = null) {
   let url
   if (params !== null) {
