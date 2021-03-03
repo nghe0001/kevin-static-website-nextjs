@@ -12,7 +12,8 @@ export default function Home ({ movies}) {
       <section className="grid grid-cols-1 sm:grid-cols-2 py-10 gap-1 
       sm:gap-6 lg:gap-10 items-stretch md:grid-cols-3 lg:grid-cols-4">
 
-      {movies.results.map((movie) => (
+      {movies.map((movie) => (
+        
       <MovieCard key={movie.title} movie={movie} />  ))}
 
 
@@ -26,7 +27,8 @@ export default function Home ({ movies}) {
 
 export async function getServerSideProps() {
   const movies = await fetchQuery('movies')
-  console.log(movies.results)
+  
+  // console.log(movies.results)
   return {
     props: {
       movies

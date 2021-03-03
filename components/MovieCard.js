@@ -5,7 +5,8 @@ import { baseUrl } from '../utils'
 
 export function MovieCard({ movie }) {
     return (
-      <Link key={movie.title} href={`/movie/${movie.id}`}>
+      <Link key={movie.title} href={`/movie/${movie.id}`
+      }>
         <a className='flex flex-col overflow-hidden mt-6'>
           <img
             className='block w-full flex-1 rounded-lg'
