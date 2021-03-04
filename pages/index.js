@@ -24,8 +24,8 @@ export default function Home ({ movies}) {
 
 }
 
-
-export async function getServerSideProps() {
+// getServerSideProps
+export async function getStaticProps() {
   const movies = await fetchQuery('movies')
   
   // console.log(movies.results)
