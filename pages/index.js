@@ -2,7 +2,7 @@ import Layout from '../components/Layout'
 import { fetchQuery } from '../utils'
 import { MovieCard } from '../components/MovieCard'
 import { useRouter } from 'next/router'
-import { en, fr } from '../translation'
+import { en, fr } from '../translation/translation'
 
 export default function Home ({ movies}) {
 

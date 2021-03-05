@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import PropTypes from "prop-types"
 import { useRouter } from 'next/router'
-import { en, fr } from '../translation'
+import { en, fr } from '../translation/translation'
 
 
 export default function Layout(props) {
