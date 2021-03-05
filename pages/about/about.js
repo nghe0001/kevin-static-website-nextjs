@@ -20,7 +20,6 @@ export default function about() {
             By: Kevin Nghiem
             <br></br>
         </p>
-
         </Layout>
     )
   }
