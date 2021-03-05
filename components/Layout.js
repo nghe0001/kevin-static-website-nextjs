@@ -36,7 +36,7 @@ export default function Layout(props) {
             </li>
             <li class="md:ml-4">
               <a class="border-t block no-underline hover:underline py-2 text-red-500  hover:text-black md:border-none md:p-0" href="#">
-                Contact
+                French
         </a>
             </li>
           </ul>
@@ -45,7 +45,7 @@ export default function Layout(props) {
       </header>
 
       <main className='bg-black min-h-screen'>
-        <div className='container mx-auto px-3 xl:px-20'>{props.children}</div>
+        <div className='container mx-auto px-3 xl:px-20 pt-10'>{props.children}</div>
       </main>
     </div>
   )
