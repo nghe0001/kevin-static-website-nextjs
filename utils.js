@@ -1,9 +1,14 @@
-// const baseUrl = "https://api.themoviedb.org/3/movie/top_rated?api_key=13a96fe2f84b375a4952279c842badf6&language=en-US&page=1"
-const searchUrl ="https://api.themoviedb.org/3/movie/"
-const api ="?api_key=13a96fe2f84b375a4952279c842badf6"
-const pictureSearch ="https://image.tmdb.org/t/p/original/"
-
 const baseUrl =  process.env.Next_APP_BaseUrl
+const searchUrl = process.env.Next_APP_SearchUrl
+const api = process.env.Next_APP_Api_Key
+const pictureSearch = process.env.Next_APP_PictureSearch
+
+// Next_APP_BaseUrl="https://api.themoviedb.org/3/movie/top_rated?api_key=13a96fe2f84b375a4952279c842badf6&language=en-US&page=1"
+// Next_APP_SearchUrl="https://api.themoviedb.org/3/movie/"
+// Next_APP_Api_Key="?api_key=13a96fe2f84b375a4952279c842badf6"
+// Next_APP_PictureSearch="https://image.tmdb.org/t/p/original/"
+
+
 
 async function fetchQuery(path, params = null) {
   let url
